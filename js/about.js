@@ -6,20 +6,9 @@ const technologies = [
   },
   { imgSrc: "assets/Icons/letter-c.png", description: "C" },
   {
-    imgSrc:
-      "assets/Icons/png-transparent-dart-logo-programming-language-computer-programming-android-text-logo-computer-programming-thumbnail.png",
+    imgSrc: "assets/Icons/download.png",
     description: "Dart",
   },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
-  { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
   { imgSrc: "assets/Icons/pngwing.com.png", description: "x86" },
 ];
 
@@ -36,14 +25,12 @@ const languages = [
 
 const appendTechnology = (container, imgSrc, description) => {
   const iconDiv = document.createElement("div");
-  iconDiv.className = "col";
+  iconDiv.className =
+    "col d-flex flex-column align-items-center justify-content-center";
   iconDiv.innerHTML = `
-    <div class="bg-odd-codecyan  rounded-5  align-items-center">
-      <div class="text-center">
-        <img src="${imgSrc}" alt="" class="w-75 rounded-circle img-fluid service-img-codecyan" />
-        <div class="position-absolute top-50 start-50 translate-middle"></div>
-      </div>
-      <div class="text-center mt-2">${description}</div>
+    <div class="bg-odd-codecyan rounded-5 p-3 text-center mb-3">
+      <img src="${imgSrc}" alt="" class="w-100 h-auto img-fluid rounded-circle service-img-codecyan mb-2" /> 
+      <div>${description}</div>
     </div>
   `;
   container.appendChild(iconDiv);
@@ -51,7 +38,7 @@ const appendTechnology = (container, imgSrc, description) => {
 
 const appendLanguage = (container, imgSrc, description) => {
   const iconDiv = document.createElement("div");
-  iconDiv.className = "col d-flex justify-content-center align-items-center"; // Added classes for flex layout
+  iconDiv.className = "col d-flex justify-content-center align-items-center";
   iconDiv.innerHTML = `
     <div class="bg-white rounded-5 p-3"> <!-- Added padding class -->
       <div class="text-center">
