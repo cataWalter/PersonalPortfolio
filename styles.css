@@ -114,5 +114,6 @@ a.dev-codecyan:hover {
 html,
 body {
   margin-right: 0 !important;
+  margin-left: 0 !important;
   overflow-x: hidden;
 }
