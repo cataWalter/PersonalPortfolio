@@ -26,13 +26,12 @@ const technologies = [
 const languages = [
   "assets/Languages/download.png",
   "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
-  "assets/Languages/Flag_of_Italy.svg.png",
+  "assets/Languages/united-kingdom.png",
+  "assets/Languages/flag (1).png",
+  "assets/Languages/flag.png",
+  "assets/Languages/france.png",
+  "assets/Languages/german.png",
+  "assets/Languages/turkey.png",
 ];
 
 const appendTechnology = (container, imgSrc, description) => {
@@ -52,12 +51,11 @@ const appendTechnology = (container, imgSrc, description) => {
 
 const appendLanguage = (container, imgSrc, description) => {
   const iconDiv = document.createElement("div");
-  iconDiv.className = "col";
+  iconDiv.className = "col d-flex justify-content-center align-items-center"; // Added classes for flex layout
   iconDiv.innerHTML = `
-    <div class="bg-white  rounded-5  align-items-center">
+    <div class="bg-white rounded-5 p-3"> <!-- Added padding class -->
       <div class="text-center">
-        <img src="${imgSrc}" alt="" class="w-75 img-fluid service-img-codecyan" />
-        <div class="position-absolute top-50 start-50 translate-middle"></div>
+        <img src="${imgSrc}" alt="" class="icon img-fluid" /> <!-- Added class for icon styling -->
       </div>
       <div class="text-center mt-2">${description}</div>
     </div>
