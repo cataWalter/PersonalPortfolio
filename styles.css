@@ -117,3 +117,20 @@ body {
   margin-left: 0 !important;
   overflow-x: hidden;
 }
+
+.technology-item {
+  margin-bottom: 0; /* Adjust the margin as needed */
+}
+
+.language-icon-container {
+  width: 100px; /* Adjust the width to your preference */
+  height: 100px; /* Adjust the height to your preference */
+  border-radius: 40%; /* Make the border round */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.language-icon {
+  width: 100%; /* Ensure the image fills its container */
+  height: 100%; /* Ensure the image fills its container */
+  object-fit: scale-down; /* Ensure the image fills the container without stretching */
+}
