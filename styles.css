@@ -117,3 +117,9 @@ a.dev-codecyan:hover {
 .anim-codecyan:hover img {
   transform: scale(1.05);
 }
+
+html,
+body {
+  margin-right: 0 !important;
+  overflow-x: hidden;
+}
