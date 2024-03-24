@@ -54,7 +54,7 @@ const appendLanguage = (container, imgSrc, description) => {
   const iconDiv = document.createElement("div");
   iconDiv.className = "col";
   iconDiv.innerHTML = `
-    <div class="bg-odd-codecyan  rounded-5  align-items-center">
+    <div class="bg-white  rounded-5  align-items-center">
       <div class="text-center">
         <img src="${imgSrc}" alt="" class="w-75 img-fluid service-img-codecyan" />
         <div class="position-absolute top-50 start-50 translate-middle"></div>
